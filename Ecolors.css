@@ -1,0 +1,88 @@
+p{
+    font-family: monospace;
+    font-weight: bold;
+    
+    color: white;
+    text-align: center;
+    word-wrap: break-word;
+}
+.Parent{
+    height: 97vh;
+    width: auto;
+    background-color: #0D1A63;
+}
+.Container{
+    height: 97vh;
+    width: 63%;
+    position: absolute;
+    left: 30%;
+    background-color: #0D1A63;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+.Title{
+    height: 15vh;
+    width: 70%;
+    border-radius: 20px;
+    background-color: #1A2CA3;
+}
+.Title p{
+    margin-top: 20px;
+    font-size: 300%;
+}
+.Card-Flip{
+    height: 50vh;
+    width: 70%;
+    border-radius: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+}
+.Card-Flip:hover{
+    transform: rotateY(180deg);
+    transition: 2s;
+}
+.Front{
+    height: 50vh;
+    width: 100%;
+    border-radius: 20px;
+    position: absolute;
+    align-content: center;
+    background-color: #2845D6;
+    backface-visibility: hidden;
+}
+.Front p, .Back p{
+    margin-top: 5px;
+    font-size: 200%;
+}
+.Back{
+    height: 50vh;
+    width: 100%;
+    border-radius: 20px;
+    position: absolute;
+    align-content: center;
+    background-color: #2845D6;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+.Buttons{
+    height: 10vh;
+    width: 70%;
+    display: flex;
+    gap: 27vw;
+}
+button{
+    color: white;
+    height: 5vh;
+    width: 20%;
+    background-color: #F68048;
+    border: none;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: #e4733f;
+}
+button:active{
+    background-color: #b4592f;
+}
