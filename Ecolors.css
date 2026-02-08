@@ -1,0 +1,114 @@
+body{
+    background-color: #0D1A63;
+}
+p{
+    font-family: monospace;
+    font-weight: bold;
+    
+    color: white;
+    text-align: center;
+    word-wrap: break-word;
+}
+.Parent{
+    height: 97vh;
+    width: auto;
+}
+.Container{
+    position: absolute;
+    background-color: #0D1A63;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+.Title{
+    height: 15vh;
+    border-radius: 20px;
+    align-content: center;
+    background-color: #1A2CA3;
+}
+.Title p{
+    margin-top: 20px;
+    font-size: 300%;
+}
+.Card-Flip{
+    height: 50vh;
+    width: 70%;
+    border-radius: 20px;
+    position: relative;
+    background-color: #2845D6;
+    transform-style: preserve-3d;
+}
+.Card-Flip:hover{
+    transform: rotateY(180deg);
+    transition: 2s;
+}
+.Front{
+    height: 50vh;
+    border-radius: 20px;
+    position: absolute;
+    align-content: center;
+    background-color: #2845D6;
+    backface-visibility: hidden;
+}
+.Back{
+    height: 50vh;
+    border-radius: 20px;
+    position: absolute;
+    align-content: center;
+    background-color: #2845D6;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+.Buttons{
+    height: 10vh;
+    width: 70%;
+    display: flex;
+}
+button{
+    color: white;
+    background-color: #F68048;
+    border: none;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: #e4733f;
+}
+button:active{
+    background-color: #b4592f;
+}
+
+@media screen and (max-width: 1920px) {
+    body{
+        /* background-color: red; */
+    }
+}
+@media screen and (max-width: 1366px) {
+
+}
+@media screen and (max-width: 500px) {
+    .Container{
+        left: 10%;
+        width: 80%;
+        height: 100vh;
+    }  
+    .Title{
+        width: 100%;
+    }
+    .Card-Flip{
+        width: 100%;
+        
+    }
+    .Back p, .Front p{
+        padding: 10%;
+        font-size: 2.5rem;
+    }
+    .Buttons{
+        width: 100%;
+        gap: 40%;
+    }
+    button{
+        height: 7vh;
+        font-size: 1.8rem;
+    }
+}
